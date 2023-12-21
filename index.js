@@ -2,12 +2,12 @@ const dodger = document.getElementById("dodger");
 dodger.style.background ="#FF69B4";
 dodger.style.bottom = "10px";
 
-document.addEventListener("keydown",function(event){
-    console.log(event);
+document.addEventListener("keydown",function(e){
+    console.log(e);
 });
 
-document.addEventListener("keydown",function(event){
-    if(event.key === "ArrowLeft"){
+document.addEventListener("keydown",function(e){
+    if(e.key === "ArrowLeft"){
         const leftNumbers = dodger.style.left.replace("px","");
         const left = parseInt(leftNumbers,10);
         dodger.style.left = `${left -1}`
